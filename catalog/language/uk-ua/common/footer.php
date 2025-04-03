@@ -14,3 +14,5 @@ $_['text_account'] = 'Особистий Кабінет';
 $_['text_order'] = 'Історія замовлень';
 $_['text_wishlist'] = 'Закладки';
 $_['text_newsletter'] = 'Розсилка';
+
+$_['text_btn_close']        = 'Закрити';
