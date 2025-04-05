@@ -16,3 +16,4 @@ $_['text_wishlist'] = 'Закладки';
 $_['text_newsletter'] = 'Розсилка';
 
 $_['text_btn_close']        = 'Закрити';
+$_['text_l_social_media']        = 'Соціальні мережі';

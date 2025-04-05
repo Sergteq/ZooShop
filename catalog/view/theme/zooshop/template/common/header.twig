@@ -100,9 +100,9 @@
 				<div class="col-lg-4 col-6 text-right">
 				
 				{% set phones = telephone|split('|') %}
-				<ul class="m-0 list-unstyled">
+				<ul class="m-2 list-unstyled">
 					{% for phone in phones %}
-						<li><a href="tel:{{ phone|replace({'-': '', ' ': ''}) }}">{{ phone }}</a></li>
+						<li><i class="fa fa-phone-alt text-primary mr-1"> </i><a class="text-decoration-none" href="tel:{{ phone|replace({'-': '', ' ': ''}) }}">{{ phone }}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
