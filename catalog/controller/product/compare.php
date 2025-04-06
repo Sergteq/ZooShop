@@ -158,7 +158,7 @@ class ControllerProductCompare extends Controller {
 
 		if ($product_info) {
 			if (!in_array($this->request->post['product_id'], $this->session->data['compare'])) {
-				if (count($this->session->data['compare']) >= 4) {
+				if (count($this->session->data['compare']) >= 10) {
 					array_shift($this->session->data['compare']);
 				}
 
