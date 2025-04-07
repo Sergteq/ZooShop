@@ -322,7 +322,7 @@ class ControllerProductCategory extends Controller {
 			if (isset($this->request->get['limit'])) {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
-		
+
 			$pagination = new Pagination();
 			$pagination->total = $product_total;
 			$pagination->page = $page;
@@ -352,11 +352,18 @@ class ControllerProductCategory extends Controller {
 			$data['order'] = $order;
 			$data['limit'] = $limit;
 
+            // Wishlist
+            $data['wishlist_product_ids'] = $_COOKIE['wishlist'] ?? [];
+            if ($data['wishlist_product_ids']) {
+                $data['wishlist_product_ids'] = explode('-', $data['wishlist_product_ids']);
+            }
+
             if ($this->isAjax()) {
                 $products = '';
                 if ($data['products']) {
                     foreach ($data['products'] as $product) {
                         $arr['product'] = $product;
+                        $arr['wishlist_product_ids'] = $data['wishlist_product_ids'];
                         $products .= '<div class="col-lg-4 col-sm-6 pb-1">' . $this->load->view('product_card', $arr) . '</div>';
                     }
                 }
@@ -367,7 +374,7 @@ class ControllerProductCategory extends Controller {
                     'url' => $_GET['url'],
                     'sorts' => $ajax_sorts,
                     'pagination' => $data['pagination'],
-                    'products' => $products ?: '<div class="col"><p>У даній категорії немає товарів.</p></div>',
+                    'products' => $products ?: '<div class="col"><p>По Вашему запросу ничего не найдено...</p></div>',
                 ];
                 echo json_encode($res);
                 die;

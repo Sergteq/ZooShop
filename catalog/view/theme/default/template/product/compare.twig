@@ -2,23 +2,11 @@
 
 <div id="product-compare">
 
-    <!-- Breadcrumb Start -->
-    <div class="container-fluid">
-        <div class="row px-xl-5">
-            <div class="col-12">
-                <nav class="breadcrumb bg-light mb-30">
-                    {% for breadcrumb in breadcrumbs %}
-                        {% if loop.last %}
-                            <span class="breadcrumb-item active">{{ breadcrumb.text }}</span>
-                        {% else %}
-                            <a class="breadcrumb-item text-dark" href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
-                        {% endif %}
-                    {% endfor %}
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb End -->
+    <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
 
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">

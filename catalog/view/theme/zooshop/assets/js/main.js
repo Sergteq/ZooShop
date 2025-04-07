@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     $('body').on('click', '.update-cart-product', function (e) {
         e.preventDefault();
         let input = $(this).parent().siblings('.td-qty').find('input');
@@ -12,7 +12,7 @@
             cart.add(product_id, val);
         }
     });
-
+    
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -96,21 +96,20 @@
     });
 
 
-  // Product Quantity
-  $('.quantity button').on('click', function () {
-    var button = $(this);
-    var oldValue = button.parent().parent().find('input.form-control').val();
-    if (button.hasClass('btn-plus')) {
-        var newVal = parseFloat(oldValue) + 1;
-    } else {
-        if (oldValue > 0) {
-            var newVal = parseFloat(oldValue) - 1;
+    // Product Quantity
+    $('.quantity button').on('click', function () {
+        var button = $(this);
+        var oldValue = button.parent().parent().find('input.form-control').val();
+        if (button.hasClass('btn-plus')) {
+            var newVal = parseFloat(oldValue) + 1;
         } else {
-            newVal = 0;
+            if (oldValue > 0) {
+                var newVal = parseFloat(oldValue) - 1;
+            } else {
+                newVal = 0;
+            }
         }
-    }
-    button.parent().parent().find('input.form-control').val(newVal);
-});
-
-})
-(jQuery);
+        button.parent().parent().find('input.form-control').val(newVal);
+    });
+    
+})(jQuery);
