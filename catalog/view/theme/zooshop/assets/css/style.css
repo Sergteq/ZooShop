@@ -9554,7 +9554,6 @@ a.text-dark:hover, a.text-dark:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(61, 70, 77, 0.5);
   z-index: 1;
 }
 
@@ -9718,6 +9717,9 @@ a.text-dark:hover, a.text-dark:focus {
   .cart-buttons{
     display: none;
   }
+  .btn-phon{
+    display: none;
+  }
 }
 @media (max-width: 992px) {
   .navbar-nav .dropdown-menu{
@@ -9729,6 +9731,10 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex;
     justify-content: center;
   }
+  .product-action{
+    display: none;
+  }
+  
 }
 
 div.required label::after {
@@ -9822,3 +9828,12 @@ div.required-option strong::before {
   text-align: center;
   display: none;
 }
+
+.text-cartp{
+  overflow: hidden;
+      text-overflow: ellipsis;  
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+}
+

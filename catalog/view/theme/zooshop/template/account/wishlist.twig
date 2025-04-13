@@ -45,10 +45,10 @@
                                 <thead>
                                 <tr>
                                     <td class="text-center">{{ column_image }}</td>
-                                    <td class="text-left">{{ column_name }}</td>
-                                    <td class="text-right">{{ column_stock }}</td>
+                                    <td class="text-center">{{ column_name }}</td>
+                                    <td class="text-center">{{ column_stock }}</td>
                                     <td class="text-right">{{ column_price }}</td>
-                                    <td class="text-right">{{ column_action }}</td>
+                                    <td class="text-center">{{ column_action }}</td>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -63,7 +63,7 @@
                                                         {{ product.price }}
                                                     {% else %} <b>{{ product.special }}</b> <s>{{ product.price }}</s> {% endif %} </div>
                                             {% endif %}</td>
-                                        <td class="text-right"><button type="button" onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i></button>
+                                        <td class="text-center"><button type="button" onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i></button>
                                             <a href="{{ product.remove }}" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-times"></i></a></td>
                                     </tr>
                                 {% endfor %}

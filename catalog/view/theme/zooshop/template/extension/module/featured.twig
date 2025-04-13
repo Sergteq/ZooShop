@@ -10,21 +10,21 @@
 					<div class="product-img position-relative overflow-hidden">
 						<img class="img-fluid w-100" src="{{ product.thumb }}" alt="">
 						<div class="product-action">
-							<button type="button" onclick="cart.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
+							<button aria-label="button_add_in_cart" type="button" onclick="cart.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
 								<i class="fa fa-shopping-cart"></i>
 							</button>
-							<button type="button" onclick="wishlist.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
+							<button aria-label="button_add_in_wishlist" type="button" onclick="wishlist.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
 								<i class="far fa-heart"></i>
 							</button>
-							<button type="button" onclick="compare.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
+							 <!--<button aria-label="button_add_in_compare" type="button" onclick="compare.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
 								<i class="fa fa-sync-alt"></i>
-							</button>
+							</button>!-->
 						</div>
 					</div>
 					<div class="text-center py-4">
-						<a class="h6 text-decoration-none text-truncate" href="{{ product.href }}">{{ product.name }}</a>
+						<a class="text-cartp h6 text-decoration-none text-truncate" href="{{ product.href }}">{{ product.name }}</a>
 						{% if product.price %}
-							<div class="d-flex align-items-center justify-content-center mt-2">
+							<div class="d-flex align-items-center justify-content-center mt-4">
 								{% if not product.special %}
 									<h5>{{ product.price }}</h5>
 								{% else %}
@@ -48,15 +48,15 @@
 						</div>
 
 						<div class="cart-buttons mt-2">
-							<button type="button" onclick="cart.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
+							<button aria-label="button_add_in_cart" type="button" onclick="cart.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
 								<i class="fa fa-shopping-cart"></i>
 							</button>
-							<button type="button" onclick="wishlist.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
+							<button aria-label="button_add_in_wishlist" type="button" onclick="wishlist.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
 								<i class="far fa-heart"></i>
 							</button>
-							<button type="button" onclick="compare.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
+							 <!--<button aria-label="button_add_in_compare" type="button" onclick="compare.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
 								<i class="fa fa-sync-alt"></i>
-							</button>
+							</button>!-->
 						</div>
 
 					</div>

@@ -128,7 +128,7 @@
                     <div class="d-flex align-items-center mb-4 pt-2">
                         <div class="input-group quantity mr-3" style="width: 130px;">
                             <div class="input-group-btn">
-                                <button class="btn btn-primary btn-minus">
+                                <button aria-label="button_add_in_cart" class="btn btn-primary btn-minus">
                                     <i class="fa fa-minus"></i>
                                 </button>
                             </div>
@@ -136,12 +136,12 @@
                                    value="{{ minimum }}" id="input-quantity">
                             <input type="hidden" name="product_id" value="{{ product_id }}"/>
                             <div class="input-group-btn">
-                                <button class="btn btn-primary btn-plus">
+                                <button aria-label="button_add_in_wishlist" class="btn btn-primary btn-plus">
                                     <i class="fa fa-plus"></i>
                                 </button>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary px-3" id="button-cart"
+                        <button aria-label="button_add_in_compare" type="button" class="btn btn-primary px-3" id="button-cart"
                                 data-loading-text="{{ text_loading }}"><i
                                     class="fa fa-shopping-cart mr-1"></i> {{ button_cart }}
                         </button>
@@ -272,25 +272,23 @@
                                 <div class="product-img position-relative overflow-hidden">
                                     <img class="img-fluid w-100" src="{{ product.thumb }}" alt="">
                                     <div class="product-action">
-                                        <button type="button" onclick="cart.add('{{ product.product_id }}');"
+                                        <button aria-label="button_add_in_cart" type="button" onclick="cart.add('{{ product.product_id }}');"
                                                 class="btn btn-outline-dark btn-square" href="">
                                             <i class="fa fa-shopping-cart"></i>
                                         </button>
-                                        <button type="button" onclick="wishlist.add('{{ product.product_id }}');"
+                                        <button aria-label="button_add_in_wishlist" type="button" onclick="wishlist.add('{{ product.product_id }}');"
                                                 class="btn btn-outline-dark btn-square" href="">
                                             <i class="far fa-heart"></i>
                                         </button>
-                                        <button type="button" onclick="compare.add('{{ product.product_id }}');"
-                                                class="btn btn-outline-dark btn-square" href="">
-                                            <i class="fa fa-sync-alt"></i>
-                                        </button>
+                                       <!--<button aria-label="button_add_in_compare" type="button" onclick="compare.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
+								<i class="fa fa-sync-alt"></i>
+							</button>!-->
                                     </div>
                                 </div>
                                 <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate"
-                                       href="{{ product.href }}">{{ product.name }}</a>
-                                    {% if product.price %}
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
+                                   <a class="text-cartp h6 text-decoration-none text-truncate" href="{{ product.href }}">{{ product.name }}</a>
+						{% if product.price %}
+							<div class="d-flex align-items-center justify-content-center mt-4">
                                             {% if not product.special %}
                                                 <h5>{{ product.price }}</h5>
                                             {% else %}
@@ -314,18 +312,17 @@
                                     </div>
 
                                     <div class="cart-buttons mt-2">
-                                        <button type="button" onclick="cart.add('{{ product.product_id }}');"
+                                        <button aria-label="button_add_in_cart" type="button" onclick="cart.add('{{ product.product_id }}');"
                                                 class="btn btn-outline-dark btn-square" href="">
                                             <i class="fa fa-shopping-cart"></i>
                                         </button>
-                                        <button type="button" onclick="wishlist.add('{{ product.product_id }}');"
+                                        <button aria-label="button_add_in_wishlist" type="button" onclick="wishlist.add('{{ product.product_id }}');"
                                                 class="btn btn-outline-dark btn-square" href="">
                                             <i class="far fa-heart"></i>
                                         </button>
-                                        <button type="button" onclick="compare.add('{{ product.product_id }}');"
-                                                class="btn btn-outline-dark btn-square" href="">
-                                            <i class="fa fa-sync-alt"></i>
-                                        </button>
+                                         <!--<button aria-label="button_add_in_compare" type="button" onclick="compare.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
+								<i class="fa fa-sync-alt"></i>
+							</button>!-->
                                     </div>
 
                                 </div>

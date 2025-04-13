@@ -451,6 +451,8 @@ class ControllerProductSearch extends Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
+		
+		$data['search'] = $this->load->controller('common/search');
 
 		$this->response->setOutput($this->load->view('product/search', $data));
 	}

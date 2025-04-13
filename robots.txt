@@ -1,4 +1,7 @@
-
+User-agent: *
+Allow: /*?page
+Allow: /*?ref=
+Disallow: /*?
 Disallow: /*?page=$
 Disallow: /*&page=$
 Disallow: /*?sort=
@@ -13,3 +16,5 @@ Disallow: /*?filter_sub_category=
 Disallow: /*&filter_sub_category=
 Disallow: /*?filter_description=
 Disallow: /*&filter_description=
+Disallow: /*0-*-0-17$
+Disallow: /*-0-0-

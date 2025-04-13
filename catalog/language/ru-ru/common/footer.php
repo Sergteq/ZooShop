@@ -18,3 +18,77 @@ $_['text_powered']      = 'Работает на <a href="http://opencart-russia
 
 $_['text_btn_close']        = 'Закрыть';
 $_['text_l_social_media']        = 'Социальные сети';
+
+// City
+$_['text_city_Kyiv'] = 'Киев';
+$_['text_city_Kharkov'] = 'Харьков';
+$_['text_city_Dnepr'] = 'Днепр';
+$_['text_city_Odessa'] = 'Одесса';
+$_['text_city_Lviv'] = 'Львов';
+$_['text_city_Zaporozhye'] = 'Запорожье';
+$_['text_city_Krivoy_Rog'] = 'Кривой Рог';
+$_['text_city_Vinnitsa'] = 'Винница';
+$_['text_city_Poltava'] = 'Полтава';
+$_['text_city_Chernigov'] = 'Чернигов';
+$_['text_city_Lutsk'] = 'Луцк';
+$_['text_city_Chernivtsi'] = 'Черновцы';
+$_['text_city_Uzhgorod'] = 'Ужгород';
+$_['text_city_Kherson'] = 'Херсон';
+$_['text_city_Mykolaiv'] = 'Николаев';
+$_['text_city_Sumy'] = 'Суммы';
+$_['text_city_Ivano_Frankivsk'] = 'Ивано-Франковск';
+$_['text_city_Kropyvnytskyi'] = 'Кропивницкий';
+$_['text_city_Ternopil'] = 'Тернополь';
+$_['text_city_Zhytomyr'] = 'Житомир';
+$_['text_city_Cherkasy'] = 'Черкассы';
+$_['text_city_Rivne'] = 'Ровно';
+
+$_['text_city_Khmelnitsk'] = 'Хмельницкий';
+$_['text_city_Kamenskoye'] = 'Каменское';
+$_['text_city_Kremenchuk'] = 'Кременчуг';
+$_['text_city_Kramatorsk'] = 'Краматорск';
+$_['text_city_Bila_Tserkva'] = 'Белая Церковь';
+$_['text_city_Pavlograd'] = 'Павлоград';
+$_['text_city_Slovyansk'] = 'Славянск';
+
+$_['text_city_Kamenets_Podolsky'] = 'Камянец-Подольский';
+$_['text_city_Brovary'] = 'Бровары';
+$_['text_city_Konotop'] = 'Конотоп';
+$_['text_city_Uman'] = 'Умань';
+$_['text_city_Mukachevo'] = 'Мукачево';
+$_['text_city_Alexandria'] = 'Александрия';
+$_['text_city_Shostka'] = 'Шестка';
+$_['text_city_Berdichev'] = 'Бердичев';
+$_['text_city_Drohobych'] = 'Дрогобыч';
+$_['text_city_Nizhyn'] = 'Нежин';
+$_['text_city_Izmail'] = 'Измаил';
+$_['text_city_Novomoskovsk'] = 'Новомосковск';
+$_['text_city_Kovel'] = 'Ковель';
+$_['text_city_Bold'] = 'Смела';
+$_['text_city_Chervonograd'] = 'Красноград';
+$_['text_city_Kalush'] = 'Калуш';
+$_['text_city_Pervomais'] = 'Первомайск';
+$_['text_city_Korosten'] = 'Коростень';
+$_['text_city_Kolomaia'] = 'Коломыя';
+$_['text_city_Borispol'] = 'Борисполь';
+
+$_['text_city_Chernomorsk'] = 'Черноморск';
+$_['text_city_Stry'] = 'Стрый';
+$_['text_city_Pryluky'] = 'Прилуки';
+$_['text_city_Lozovaya'] = 'Лозовая';
+$_['text_city_Zvyagel'] = 'Звягель';
+$_['text_city_Novovolynsk'] = 'Нововолынск';
+$_['text_city_Gorishni_Plavn'] = 'Горешние Плавные';
+$_['text_city_Izyum'] = 'Изюм';
+$_['text_city_Belgorod_Dnistrovsky'] = 'Белгород-Днестровский';
+$_['text_city_Akhtyrka'] = 'Ахтырка';
+$_['text_city_Marganets'] = 'Марганец';
+$_['text_city_Fastov'] = 'Фастов';
+$_['text_city_Lubny'] = 'Лубны';
+$_['text_city_Zhovti_Vody'] = 'Желтые воды';
+$_['text_city_Svetlovodsk'] = 'Светловодск';
+$_['text_city_Irpin'] = 'Ирпень';
+$_['text_city_Shepetivka'] = 'Шепетовка';
+$_['text_city_Pokrov'] = 'Покров';
+$_['text_city_Mirgorod'] = 'Миргород';
+$_['text_city_Romny'] = 'Ромны';
