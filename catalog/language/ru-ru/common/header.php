@@ -16,6 +16,7 @@ $_['text_search']        = 'Поиск';
 $_['text_all']           = 'Смотреть Все';
 
 //
+$_['text_top_payment'] = 'Оплата и доставка';
 $_['text_top_menu_dog'] = 'Собаки';
 $_['text_top_menu_cat'] = 'Кошки';
 $_['text_top_menu_ptakhiv'] = 'Птицы';

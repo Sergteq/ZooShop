@@ -1,15 +1,22 @@
 User-agent: *
 Allow: /*?page
 Allow: /*?ref=
-Disallow: /*?
-Disallow: /*?page=$
-Disallow: /*&page=$
-Disallow: /*?sort=
-Disallow: /*&sort=
-Disallow: /*?order=
-Disallow: /*&order=
-Disallow: /*?limit=
-Disallow: /*&limit=
+Disallow:/admin/
+Disallow:/system/
+Disallow:/storage/
+Disallow:/index.php?route=checkout/
+Disallow:/index.php?route=simp;echechout/
+Disallow:/index.php?route=account/
+Disallow:/index.php?route=affiliate/
+Disallow:/index.php?route=product/searh
+Disallow:/index.php?route=product/compare
+Disallow:/index.php?route=product/special
+Disallow: /*?sort=*
+Disallow: /*&sort=*
+Disallow: /*?order=*
+Disallow: /*&order=*
+Disallow: /*?limit=*
+Disallow: /*&limit=*
 Disallow: /*?filter_name=
 Disallow: /*&filter_name=
 Disallow: /*?filter_sub_category=
@@ -18,3 +25,7 @@ Disallow: /*?filter_description=
 Disallow: /*&filter_description=
 Disallow: /*0-*-0-17$
 Disallow: /*-0-0-
+
+Sitemap: https://zooshop/sitemap.xml
+
+
