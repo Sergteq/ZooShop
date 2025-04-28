@@ -92,3 +92,4 @@ $_['text_city_Shepetivka'] = 'Шепетовка';
 $_['text_city_Pokrov'] = 'Покров';
 $_['text_city_Mirgorod'] = 'Миргород';
 $_['text_city_Romny'] = 'Ромны';
+$_['text_city_and_other'] = 'и другие города Украины';
