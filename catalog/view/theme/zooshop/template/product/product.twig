@@ -11,7 +11,7 @@
                         {% if loop.last %}
                             <span class="breadcrumb-item active">{{ breadcrumb.text }}</span>
                         {% else %}
-                            <a class="breadcrumb-item text-dark" href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+                            <a class="text-decoration-none breadcrumb-item text-dark" href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
                         {% endif %}
                     {% endfor %}
                 </nav>
@@ -303,7 +303,7 @@
                                                 <small class="fa fa-star text-primary mr-1"></small>
                                             {% endif %}
                                         {% endfor %}
-                                        <small>({{ product.reviews }})</small>
+                                        
                                     </div>
 
                                     <div class="cart-buttons mt-2">

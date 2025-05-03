@@ -4,6 +4,7 @@ $_['heading_title'] = 'Мої Адреси';
 
 
 // Text
+$_['text_h2_adress'] = 'Змінити адресу';
 $_['text_account'] = 'Особистий Кабінет';
 $_['text_address_book'] = 'Список адрес доставки';
 $_['text_edit_address'] = 'Редагувати адресу';

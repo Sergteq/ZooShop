@@ -8,7 +8,7 @@
                     {% if loop.last %}
                         <span class="breadcrumb-item active">{{ breadcrumb.text }}</span>
                     {% else %}
-                        <a class="breadcrumb-item text-dark" href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+                        <a class="text-decoration-none breadcrumb-item text-dark" href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
                     {% endif %}
                 {% endfor %}
             </nav>
@@ -24,7 +24,7 @@
     {% set class = 'col-sm-12' %}
     {% endif %}
     <div id="content" class="{{ class }}">{{ content_top }}
-      <h2>{{ text_address }}</h2>
+      <h2>{{ text_h2_adress }}</h2>
       <form action="{{ action }}" method="post" enctype="multipart/form-data" class="form-horizontal">
         <fieldset>
           <div class="form-group required">
@@ -49,7 +49,7 @@
               <input type="text" name="company" value="{{ company }}" placeholder="{{ entry_company }}" id="input-company" class="form-control" />
             </div>
           </div>
-          <div class="form-group required">
+          <!--<div class="form-group required">
             <label class="col-sm-2 control-label" for="input-address-1">{{ entry_address_1 }}</label>
             <div class="col-sm-10">
               <input type="text" name="address_1" value="{{ address_1 }}" placeholder="{{ entry_address_1 }}" id="input-address-1" class="form-control" />
@@ -62,7 +62,7 @@
             <div class="col-sm-10">
               <input type="text" name="address_2" value="{{ address_2 }}" placeholder="{{ entry_address_2 }}" id="input-address-2" class="form-control" />
             </div>
-          </div>
+          </div>!-->
           <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-city">{{ entry_city }}</label>
             <div class="col-sm-10">
@@ -79,7 +79,7 @@
               <div class="text-danger">{{ error_postcode }}</div>
               {% endif %} </div>
           </div>
-          <div class="form-group required">
+        <!--  <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-country">{{ entry_country }}</label>
             <div class="col-sm-10">
               <select name="country_id" id="input-country" class="form-control">
@@ -101,7 +101,7 @@
               {% if error_country %}
               <div class="text-danger">{{ error_country }}</div>
               {% endif %} </div>
-          </div>
+          </div> 
           <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-zone">{{ entry_zone }}</label>
             <div class="col-sm-10">
@@ -110,7 +110,7 @@
               {% if error_zone %}
               <div class="text-danger">{{ error_zone }}</div>
               {% endif %} </div>
-          </div>
+          </div>!-->
           {% for custom_field in custom_fields %}
           {% if custom_field.type == 'select' %}
           <div class="form-group{% if custom_field.required %} required {% endif %} custom-field" data-sort="{{ custom_field.sort_order }}">

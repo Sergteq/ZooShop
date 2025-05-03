@@ -1,6 +1,6 @@
 <div class="product-item bg-light mb-4 product-id-{{ product.product_id }}">
     <div class="product-img position-relative overflow-hidden">
-        <img class="img-fluid w-100" src="{{ product.thumb }}" alt="">
+       <a class="link-product-cart-img" href="{{ product.href }}"> <img class="img-fluid w-100" src="{{ product.thumb }}" alt=""> </a>
         <div class="product-action">
             <button aria-label="button_add_in_cart" type="button" onclick="cart.add('{{ product.product_id }}');" class="btn btn-outline-dark btn-square" href="">
                 <i class="fa fa-shopping-cart"></i>
@@ -35,7 +35,7 @@
 									<small class="fa fa-star text-primary mr-1"></small>
 								{% endif %}
 							{% endfor %}
-							
+                        
 						</div>
 
         <div class="cart-buttons mt-2">

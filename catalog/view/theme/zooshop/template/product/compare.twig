@@ -8,7 +8,7 @@
                     {% if loop.last %}
                         <span class="breadcrumb-item active">{{ breadcrumb.text }}</span>
                     {% else %}
-                        <a class="breadcrumb-item text-dark" href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+                        <a class="text-decoration-none breadcrumb-item text-dark" href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
                     {% endif %}
                 {% endfor %}
             </nav>
@@ -80,7 +80,7 @@
           <td class="rating"> {% for i in 1..5 %}
             {% if product.rating < i %} <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span> {% else %} <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> {% endif %}
             {% endfor %} <br/>
-            {{ product.reviews }}</td>
+            {{ reviews }}</td>
           {% endfor %} </tr>
         {% endif %}
         <tr>
