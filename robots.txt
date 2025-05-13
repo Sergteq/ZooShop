@@ -25,6 +25,6 @@ Disallow: /*&filter_description=
 Disallow: /*0-*-0-17$
 Disallow: /*-0-0-
 
-Sitemap: https://zooshop/sitemap.xml
+Sitemap: https://zooshop/index.php?route=extension/feed/google_sitemap
 
 
